@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Стили HTML</title>
+</head>
+
+<body>
+   <div class="par par1">
+      Однажды весною, в час небывало <span class="adj">жаркого</span> заката, в <span class="name">Москве</span>, на
+      Патриарших прудах, появились два
+      гражданина. <span class="adj">Первый</span> из
+      них, одетый в <span class="adj">летнюю серенькую</span> пару, был <span class="adj">маленького</span> роста,
+      упитан, лыс, свою
+      <span class="adj">приличную</span> шляпу пирожком нес в руке,
+      а на хорошо <span class="adj">выбритом</span> лице его помещались сверхъестественных размеров очки в черной
+      роговой оправе.
+      Второй –
+      <span class="adj">плечистый, рыжеватый, вихрастый молодой</span> человек в <span class="adj">заломленной</span> на
+      затылок клетчатой кепке
+      – был в ковбойке, <span class="adj">жеваных
+         белых</span> брюках и в <span class="adj">черных</span> тапочках.
+   </div>
+
+   <div class="par par2">
+      Первый был не кто иной, как <span class="name">Михаил Александрович Берлиоз</span>, председатель правления одной
+      из <span class="adj">крупнейших
+         московских
+         литературных</span> ассоциаций, сокращенно именуемой <span class="name">МАССОЛИТ</span>, и редактор толстого
+      <span class="adj">художественного</span>
+      журнала, а <span class="adj">молодой</span>
+      спутник его – поэт Иван Николаевич Понырев, пишущий под псевдонимом Бездомный.
+   </div>
+
+   <div class="par par3">
+      Попав в тень чуть <span class="adj">зеленеющих</span> лип, писатели первым долгом бросились к пестро <span
+         class="adj">раскрашенной</span>
+      будочке с надписью <span class="name">«Пиво
+         и воды».</span>
+   </div>
+
+   <style>
+      .par {
+         margin: 30px;
+         border: 1px solid silver;
+         padding: 16px;
+      }
+
+      .par.par1,
+      .par.par2 {
+         border-width: 4px;
+      }
+
+      .par.par1 {
+         border: 4px dashed brown;
+         border-color: brown;
+         color: blue;
+      }
+
+      .adj {
+         background-color: yellowgreen;
+         border: 2px solid orange;
+         cursor: pointer;
+         transition: all 1s;
+         /*Скорость перехода*/
+      }
+
+      .adj:hover {
+         background-color: yellow;
+         border: 4px solid red;
+      }
+
+      .name {
+         display: inline-block;
+         /*Блок остается в тексте*/
+         background-color: red;
+         padding: 10px;
+      }
+   </style>
+
+</body>
+
+</html>

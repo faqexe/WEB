@@ -1,0 +1,206 @@
+/* СТРОЧНЫЙ FLEX */
+.container1,
+.container2,
+.container3,
+.container4 {
+   display: flex;
+}
+
+.block,
+.block2,
+.block3,
+.block4,
+.column1,
+.column2,
+.column3,
+.cub111,
+.cub222,
+.cub333,
+.cub444 {
+   border: 1px solid black;
+   padding: 0.25rem;
+   margin: 0.25rem;
+}
+
+.block:nth-child(2) {
+   flex-grow: 1;
+   flex-basis: 0;
+   text-align: center;
+}
+
+.block2.dogs {
+   flex-grow: 2;
+   flex-basis: 0;
+   text-align: center;
+}
+
+.block2.horse {
+   flex-grow: 1;
+   flex-basis: 0;
+}
+
+.block3.fish {
+   flex-grow: 1;
+   flex-basis: 0;
+   background-color: aquamarine;
+   text-align: center;
+}
+
+.block4.tree {
+   background-color: greenyellow;
+   text-align: center;
+}
+
+.block4.crown {
+   flex-grow: 1;
+   flex-basis: 0;
+   text-align: center;
+}
+
+/* КОЛОНОЧНЫЙ FLEX */
+.flexcolumn {
+   display: flex;
+}
+
+.containercolumn1,
+.containercolumn3 {
+   display: flex;
+   flex-grow: 1;
+   flex-direction: column;
+   background-color: aqua;
+   align-items: center;
+   height: 300px;
+}
+
+.containercolumn2 {
+   display: flex;
+   flex-grow: 1;
+   flex-direction: column;
+   height: 300px;
+   background-color: blue;
+   justify-content: space-between;
+}
+
+.containercolumn3 {
+   background-color: blueviolet;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+/* FLEX in FLEX */
+.wrapper {
+   width: 864px;
+}
+
+.flex,
+.flex2,
+.flex3 {
+   display: flex;
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line11,
+.line22,
+.line33,
+.line111,
+.line222,
+.line333,
+.line444 {
+   display: flex;
+   padding: 0.5em;
+   margin: 0.5em;
+   background-color: yellow;
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line11,
+.line33,
+.line111,
+.line222,
+.line333,
+.line444 {
+   flex-basis: 200px;
+   height: 184px;
+}
+
+.cub1,
+.cub2,
+.cub3,
+.cub4,
+.cub11,
+.cub22,
+.cub33 {
+   border: 1px solid black;
+   padding: 0.25rem;
+   margin: 0.25rem;
+}
+
+.cub333 {
+   flex-grow: 1;
+}
+
+.line1 {
+   align-items: flex-end;
+   justify-content: flex-end;
+}
+
+.line2 {
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: flex-end;
+}
+
+.line3 {
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: flex-start;
+}
+
+.line4 {
+   flex-direction: column;
+   justify-content: end;
+   align-items: flex-start;
+}
+
+.line11 {
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: center;
+}
+
+.line22 {
+   flex-direction: column;
+   flex-basis: 432px;
+   align-items: center;
+   justify-content: center;
+}
+
+.line33 {
+   align-items: flex-start;
+   justify-content: flex-start;
+}
+
+.line111 {
+   justify-content: flex-end;
+   align-items: flex-start;
+}
+
+.line222 {
+   flex-direction: column;
+}
+
+.line333 {
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.line444 {
+   flex-direction: column;
+   justify-content: space-around;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Разноцветные блоки</title>
+</head>
+
+<body>
+
+   <div class="paragraph1 bordered" style="text-align:center; background-color: aqua;">
+      В <span class="adj">белом</span> плаще с <span class="adj">кровавым</span>
+      подбоем, <span class="adj">шаркающей
+         кавалерийской</span> походкой, <span class="adj">ранним</span> утром четырнадцатого числа
+      <span class="adj">весеннего</span>
+      месяца нисана в <span class="adj">крытую</span> колоннаду между двумя крыльями дворца <span class="name"
+         style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(195,18,18,0.8130602582830007) 34%, rgba(0,212,255,1) 100%); color: aliceblue;">Ирода
+         Великого</span> вышел прокуратор <span class="name"
+         style="background-color:rgb(103, 86, 196); color: aliceblue;">Иудеи Понтий
+         Пилат.</span>
+   </div>
+
+   <div class="paragraph2 bordered"
+      style="text-align:right; width: 500px; background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(106,9,121,0.23883056640625) 35%, rgba(0,212,255,1) 100%);">
+      Более всего на свете прокуратор ненавидел запах <span class="adj">розового</span> масла, и
+      все теперь предвещало <span>нехороший</span> день, так как запах
+      этот начал преследовать прокуратора с рассвета. Прокуратору казалось, что <span class="adj">розовый</span> запах
+      источают кипарисы и пальмы в
+      саду, что к запаху кожи и конвоя примешивается <span class="adj">проклятая розовая</span>
+      струя. От флигелей в тылу дворца, где расположилась
+      <span class="adj">пришедшая</span> с прокуратором в <span class="name"
+         style="background-color:red; color: aliceblue;">Ершалаим</span> <span class="adj">первая</span> когорта
+      <span class="name" style="background-color:green; color: aliceblue;">Двенадцатого
+         Молниеносного
+         легиона</span>, заносило дымком в колоннаду
+      через <span class="adj">верхнюю</span> площадку сада, и к <span class="adj">горьковатому</span> дыму,
+      свидетельствовавшему о том, что кашевары в кентуриях
+      начали
+      готовить обед, примешивался все тот же <span class="adj">жирный розовый</span> дух. О боги,
+      боги, за что вы наказываете меня?
+   </div>
+
+   <div class="paragraph3 bordered" style="text-align:left; width: 50%; background-color: yellowgreen;">
+      «Да, нет сомнений! Это она, опять она, <span class="adj">непобедимая</span>, <span class="adj">ужасная</span>
+      болезнь гемикрания, при которой болит полголовы. От нее
+      нет средств, нет никакого спасения. Попробую не двигать головой.»
+   </div>
+
+   <style>
+      .name {
+         display: inline-block;
+         border: 5px solid blue;
+         padding: 5px;
+         transition: all .3s;
+         cursor: pointer;
+      }
+
+      .name:hover {
+         box-shadow: 5px 5px 5px 0px blue;
+      }
+
+      .paragraph1,
+      .paragraph2,
+      .paragraph3 {
+         padding: 8px 16px;
+         margin: 8px;
+      }
+
+      .paragraph1.bordered,
+      .adj {
+         border: 2px solid red;
+      }
+
+      .paragraph2.bordered {
+         border: 5px dotted blue;
+      }
+
+      .paragraph3.bordered {
+         border: 3px dashed green;
+      }
+
+      .paragraph1>.adj {
+         background-color: orange;
+      }
+
+      .paragraph2>.adj {
+         background-color: blueviolet;
+      }
+
+      .paragraph3>.adj {
+         background-color: red;
+      }
+
+      .adj {
+         transition: all .3s;
+      }
+
+      .adj:hover {
+         background-color: yellow;
+      }
+   </style>
+
+
+</body>
+
+</html>

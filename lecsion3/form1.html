@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Формы</title>
+</head>
+
+<body>
+   <form action="#" method="post" enctype="multipart/form-data">
+      <div>
+         <label for="name">Имя</label> <br>
+         <input type="text" name="name">
+      </div>
+      <div>
+         <label for="last_name">Фамилия</label> <br>
+         <input type="text" name="last_name">
+      </div>
+      <div>
+         Дата рождения <br>
+         <select name="day">
+            <option value="1">День</option>
+         </select>
+         <select name="month">
+            <option value="2">Месяц</option>
+         </select>
+         <select name="year">
+            <option value="3">Год</option>
+         </select>
+      </div>
+      <div>
+         Пол <br>
+         <input type="radio" name="gender">Мужской
+         <input type="radio" name="gender">Женский
+      </div>
+      <div>
+         Имя ящика <br>
+         <input type="email">
+         <select name="year">
+            <option value="1">@mail.ru</option>
+         </select>
+      </div>
+      <div>
+         Пароль <br>
+         <input type="password" name="pass">
+         <a href="#">Сгенерировать надежный пароль</a>
+      </div>
+      <div>
+         Номер телефона <br>
+         <select name="year">
+            <option value="1">RU</option>
+         </select>
+         <input type="tel">
+         <a href="#">Указать резервную почту</a>
+      </div>
+      <div>
+         <button type="submit">Создать</button> <br>
+         Нажимая "Создать", вы принимаете следующие
+         <a href="#">Условия использования</a>
+      </div>
+   </form>
+   <br><br><br>
+   <form action="#">
+      <h2>Калькулятор доходности вкладов</h2>
+      <div>
+         Сумма вклада
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="range" name="cash">
+         <select name="money">
+            <option value="1">Рубли</option>
+         </select>
+      </div>
+      <p></p>
+      <div>
+         Срок размещения
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <select name="money">
+            <option value="1">1 год</option>
+         </select>
+         <a href="#">задать свой</a>
+      </div>
+      <p></p>
+      <div>
+         Дата начала срока
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="date" name="calend" value="2022-06-01">
+      </div>
+      <p></p>
+      <div>
+         Процентная ставка
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="text" placeholder="8"> &nbsp; % годовых
+      </div>
+      <p></p>
+      <div>
+         Начислено процентов
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="text" placeholder="ДОБАВЛЯТЬ КО ВКЛАДУ">
+         <input type="text" placeholder="ВЫПЛАЧИВАТЬ">
+      </div>
+      <p></p>
+      <div>
+         Периодичность капитализации
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <select name="cap">
+            <option value="1">раз в месяц</option>
+         </select>
+      </div>
+      <p></p>
+      <div>
+         Пополнение вклада
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <select name="vklad">
+            <option value="1">не предусмотренно</option>
+         </select>
+      </div>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+         style="background-color:rgba(41, 41, 195, 0.999); color: white;" type="submit">РАССЧИТАТЬ</button>
+   </form>
+   <br><br><br><br>
+   <form action="#">
+      <h2>Выбор категорий товаров на OZON</h2>
+      <div>
+         <b>Сроки доставки</b>
+         <p></p>
+         <input checked type="radio"> Не важно<br>
+         <input type="radio"> До 2 дней<br>
+         <input type="radio"> До 5 дней
+      </div>
+      <p></p>
+      <div>
+         <b>Цена</b>
+         <p></p>
+         <input type="range">
+         <input type="range">
+      </div>
+      <p></p>
+      <div>
+         <b>Рассрочка без доплаты</b>
+         <input type="checkbox" name="dop">
+      </div>
+      <p></p>
+      <div>
+         <b>Бренды</b>
+         <p></p>
+         <input type="checkbox" name="xia"> Xiaomi <br>
+         <input type="checkbox" name="app"> Apple <br>
+         <input type="checkbox" name="sam"> Samsung <br>
+         <input type="checkbox" name="real"> realme <br>
+         <input type="checkbox" name="bq"> BQ <br>
+         <a href="#">Посмотреть все</a>
+      </div>
+      <p></p>
+      <div>
+         <b>Уцененный товар</b>
+         <input type="checkbox" name="dop">
+         <p></p>
+         <b>Высокий рейтинг</b>
+         <input type="checkbox" name="dop">
+         <p></p>
+         <b>Товары со скидкой</b>
+         <input type="checkbox" name="dop">
+      </div>
+   </form>
+</body>
+
+</html>
