@@ -103,10 +103,11 @@
 }
 .gridimg .block:nth-child(3) {
    display: flex;
-   font-size: 12px;
+   font-size: 10px;
    font-weight: 600;
    font-family: "Courier New", Courier, monospace;
    color: white;
+   flex-direction: column;
    text-align: center;
    justify-content: center;
    overflow: hidden; /*содержимое не вылезает за границы блока*/
@@ -152,10 +153,11 @@
 .block3 {
    grid-area: block3;
    display: flex;
-   font-size: 12px;
+   font-size: 10px;
    font-weight: 600;
    font-family: "Courier New", Courier, monospace;
    color: white;
+   flex-direction: column;
    text-align: center;
    justify-content: center;
    overflow: hidden; /*содержимое не вылезает за границы блока*/
@@ -242,6 +244,7 @@
 .flexbox:nth-child(7) {
    align-items: flex-start;
    justify-content: flex-start;
+   
 }
 .flexbox:nth-child(8) {
    justify-content: flex-end;
