@@ -1,0 +1,153 @@
+body {
+   margin: 0;
+}
+nav {
+   padding: 0.5em;
+   background-color: red;
+   color: white;
+   text-align: center;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+.date {
+   font-weight: bold;
+   padding: 0.5rem 1rem;
+   background-color: azure;
+   position: sticky;
+   top: 34px;
+   z-index: 1;
+}
+.date > div {
+   display: inline-block;
+   position: relative;
+}
+.date i {
+   color: red;
+   position: absolute;
+   top: 4px;
+   left: 16px;
+   font-size: 0.5rem;
+}
+.par {
+   padding: 8px;
+   padding-right: 30px;
+   border: 1px solid silver;
+   margin: 8px;
+   position: relative;
+   border-radius: 8px;
+   box-shadow: 0 0 4px silver;
+   background-color: white;
+   top: 0;
+}
+.call-me {
+   position: fixed;
+   /* background-color: rgba(255, 0, 0, 0.582); */
+   background-color: red;
+   /* padding: 8px; */
+   color: white;
+   border-radius: 50%; /*делает элемент круглым*/
+   cursor: pointer;
+   transition: all 0.3s;
+   bottom: 3rem;
+   right: 1rem;
+   /* backdrop-filter: blur(5px); */
+   z-index: 2;
+   width: 70px;
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.call-me:hover {
+   background-color: orange;
+   z-index: 2000;
+}
+.call-me2 {
+   position: fixed;
+   background-color: #00bfff;
+   color: white;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: all 0.3s;
+   bottom: 5rem;
+   right: 3rem;
+   z-index: 1000;
+   width: 70px;
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.call-me2:hover {
+   background-color: orange;
+}
+.buttons .btn {
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+.buttons .btn-2 {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+.btn {
+   display: flex;
+   background-color: red;
+   color: white;
+   width: 20px;
+   height: 20px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 0 8px 0 8px;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+.btn:hover {
+   background-color: orange;
+}
+.btn-2 {
+   display: flex;
+   background-color: green;
+   color: white;
+   width: 30px;
+   height: 30px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 8px 0 8px 0;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+.btn-2:hover {
+   background-color: rgb(0, 152, 122);
+}
+.login {
+   position: fixed;
+   left: -70px;
+   bottom: 30px;
+   z-index: 500;
+   padding: 0 30px 30px 0;
+   transition: all 0.3s;
+}
+.login:hover {
+   left: 0;
+}
+.login a {
+   display: block;
+   background-color: red;
+   color: white;
+   font-weight: bold;
+   padding: 20px;
+   border-radius: 0 8px 8px 0;
+}
+
+footer {
+   padding: 0.5em;
+   background-color: #00bfff;
+   color: white;
+   text-align: center;
+   position: sticky;
+   bottom: 0;
+   z-index: 1;
+}
