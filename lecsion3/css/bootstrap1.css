@@ -1,0 +1,7 @@
+/* [class^=col] - выбирает все классы начинающиеся с col */
+[class^=col] {
+   background-color: orange;
+   padding: 1rem;
+   text-align: center;
+   border: 2px solid red;
+}
