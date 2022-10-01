@@ -1,11 +1,11 @@
 <?php
 
-$a = $_GET['a'] ?? 0;
-$b = $_GET['b'] ?? 0;
+$a = $_GET['a'] ?? 1;
+$b = $_GET['b'] ?? 1;
 
 $sum = $a + $b;
 $pro = $a * $b;
 $chas = $a / $b;
 $raz = $a - $b;
 
-include "template_calc.php";
+include "template.php";
