@@ -8,4 +8,4 @@ $pro = $a * $b;
 $chas = $a / $b;
 $raz = $a - $b;
 
-include "template.php";
+include "template_calc.php";

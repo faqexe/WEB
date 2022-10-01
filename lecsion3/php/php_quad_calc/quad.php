@@ -24,4 +24,4 @@ $x2 = round(($b * (-1) - sqrt($d)) / (2 * $a), 1);
 //    $x2 = round(($b * (-1) - sqrt($d)) / (2 * $a), 1);
 // }
 
-include "template.php";
+include "template_quad.php";

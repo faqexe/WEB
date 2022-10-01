@@ -1,4 +1,4 @@
 <?php
 
 $name = $_GET['fio'] ?? 'без имени';
-include "template.php";
+include "template_name.php";
