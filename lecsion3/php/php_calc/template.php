@@ -11,29 +11,30 @@
 
 <body>
    <h5>Задание 2. Реализовать калькулятор</h5>
-   <form action="#">
-      <div class="row">
-         <div class="col-4">
-            <input class="form-control" type="text" name="a" value="<?= $a ?>" placeholder="a">
+   <div class="my-form container text-center w-25 border border-2 border-primary rounded p-4 shadow-lg">
+      <form action="#">
+         <div class="row justify-content-center">
+            <div class="col-4 col-2 col-md-auto w-75">
+               <input class="form-control shadow bg-body rounded" type="text" name="a" value="<?= $a ?>" placeholder="a">
+            </div>
          </div>
-      </div>
-      <div class="row">
-         <div class="col-4 mt-2">
-            <input class="form-control" type="text" name="b" value="<?= $b ?>" placeholder="b">
+         <div class="row justify-content-center">
+            <div class="col-4 mt-2 col-2 col-md-auto w-75">
+               <input class="form-control shadow bg-body rounded" type="text" name="b" value="<?= $b ?>" placeholder="b">
+            </div>
          </div>
-      </div>
-      <div class="row mt-2">
-         <div class="col">
-            <button type="submit" class="btn btn-primary">Вычислить</button>
+         <div class="row mt-2">
+            <div class="col">
+               <button type="submit" class="btn btn-primary w-75 shadow">Вычислить</button>
+            </div>
          </div>
-      </div>
-   </form>
-   <hr>
-   Сумма = <?= $sum ?> <br>
-   Произведение = <?= $pro ?> <br>
-   Частное = <?= $chas ?> <br>
-   Разность = <?= $raz ?>
-
+      </form>
+      <hr>
+      Сумма = <?= $sum ?> <br>
+      Произведение = <?= $pro ?> <br>
+      Частное = <?= $chas ?> <br>
+      Разность = <?= $raz ?>
+   </div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 

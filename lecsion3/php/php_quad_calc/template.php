@@ -11,35 +11,36 @@
 
 <body>
    <h4>Задание 3. Реализовать калькулятор корней квадратного уравнения</h4>
-   <form action="#">
-      <div class="row">
-         <div class="col-2">a</div>
-         <div class="col-2">b</div>
-         <div class="col-2">c</div>
-      </div>
-      <div class="row">
-         <div class="col-2">
-            <input class="form-control" type="text" name="a" value="<?= $a ?>" placeholder="a">
+   <div class="my-form container text-center w-50 border border-2 border-primary rounded p-0 shadow-lg">
+      <form action="#">
+         <div class="row justify-content-center">
+            <div class="col-2">a</div>
+            <div class="col-2">b</div>
+            <div class="col-2">c</div>
          </div>
-         <div class="col-2">
-            <input class="form-control" type="text" name="b" value="<?= $b ?>" placeholder="b">
+         <div class="row justify-content-center">
+            <div class="col-2">
+               <input class="form-control shadow bg-body rounded" type="text" name="a" value="<?= $a ?>" placeholder="a">
+            </div>
+            <div class="col-2">
+               <input class="form-control shadow bg-body rounded" type="text" name="b" value="<?= $b ?>" placeholder="b">
+            </div>
+            <div class="col-2">
+               <input class="form-control shadow bg-body rounded" type="text" name="c" value="<?= $c ?>" placeholder="c">
+            </div>
          </div>
-         <div class="col-2">
-            <input class="form-control" type="text" name="c" value="<?= $c ?>" placeholder="c">
+         <div class="row mt-2">
+            <div class="col">
+               <button type="submit" class="btn btn-primary w-50 shadow">Отправить</button>
+            </div>
          </div>
-      </div>
-      <div class="row mt-2">
-         <div class="col">
-            <button type="submit" class="btn btn-primary">Отправить</button>
-         </div>
-      </div>
-   </form>
-   <br>
-   <?= $a ?>x<sup>2</sup> + <?= $b ?>x + <?= $c ?> = 0 <br>
-   D = <?= $d ?> <br>
-   x1 = <?= $x1 ?> <br>
-   x2 = <?= $x2 ?> <br>
-
+      </form>
+      <br>
+      <?= $a ?>x<sup>2</sup> + <?= $b ?>x + <?= $c ?> = 0 <br>
+      D = <?= $d ?> <br>
+      x1 = <?= $x1 ?> <br>
+      x2 = <?= $x2 ?> <br>
+   </div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 

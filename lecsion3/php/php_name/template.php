@@ -11,7 +11,7 @@
 
 <body>
    <h5>Задание 1. Реализовать систему которая будет здороваться по нажатию на Отправить</h5>
-   <div class="my-form container text-center w-25 border border-2 border-primary rounded">
+   <div class="my-form container text-center w-25 border border-2 border-primary rounded p-2 shadow-lg">
       <form action="#">
          <div class="row">
             <div class="col">
@@ -20,12 +20,12 @@
          </div>
          <div class="row justify-content-center">
             <div class="col-2 col-md-auto w-75">
-               <input class="form-control" type="text" name="fio">
+               <input class="form-control shadow bg-body rounded" type="text" name="fio">
             </div>
          </div>
          <div class="row mt-2">
             <div class="col">
-               <button type="submit" class="btn btn-primary w-75">Отправить</button>
+               <button type="submit" class="btn btn-primary w-75 shadow">Отправить</button>
             </div>
          </div>
       </form>
