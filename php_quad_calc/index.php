@@ -14,4 +14,14 @@ $d = $b * $b - 4 * $a * $c;
 $x1 = round(($b * (-1) + sqrt($d)) / (2 * $a), 1);
 $x2 = round(($b * (-1) - sqrt($d)) / (2 * $a), 1);
 
+// if ($d < 0) {
+//    $x = 'Решений нет';
+// } elseif ($d == 0) {
+//    $x = round(($b * (-1) / (2 * $a)), 1);
+// } 
+// else ($d > 0) {
+//    $x1 = round(($b * (-1) + sqrt($d)) / (2 * $a), 1);
+//    $x2 = round(($b * (-1) - sqrt($d)) / (2 * $a), 1);
+// }
+
 include "template.php";
