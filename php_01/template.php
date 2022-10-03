@@ -14,9 +14,9 @@
    <div class="row p-3">
       <!-- Генерирует картинки из заданного массива в index -->
       <?php foreach ($items as $path) { ?>
-      <div class="col">
-         <img class="img-thumbnail" src="<?= $path ?>" alt="">
-      </div>
+         <div class="col">
+            <img class="img-thumbnail" src="<?= $path ?>" alt="">
+         </div>
       <?php } ?>
    </div>
 
