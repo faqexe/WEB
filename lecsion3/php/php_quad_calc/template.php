@@ -39,7 +39,9 @@
       <?= $a ?>x<sup>2</sup> + <?= $b ?>x + <?= $c ?> = 0 <br>
       D = <?= $d ?> <br>
       x1 = <?= $x1 ?> <br>
-      x2 = <?= $x2 ?> <br>
+      <?php if ($d != 0) { ?>
+         x2 = <?= $x2 ?> <br>
+      <?php } ?>
    </div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
